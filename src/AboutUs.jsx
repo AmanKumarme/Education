@@ -3,7 +3,7 @@ import ServiceSlider from "./ServiceSlider";
 
 const AboutUs = () => {
   return (
-    <div className="mt-5 text-white">
+    <div className="mt-5 text-white px-5">
       <h2 className="text-center">About Us</h2>
       <p className="fs-5">
         Welcome to Param Computers, a pioneer in computer eductaion since 2001.

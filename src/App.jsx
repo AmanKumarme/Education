@@ -1,7 +1,5 @@
-import MainContainer from "./MainContainer"
-import Footer from "./Footer"
 import Header from "./Header"
-import AboutUs from "./AboutUs"
+import { Outlet } from "react-router-dom"
 
 
 function App() {
@@ -9,8 +7,8 @@ function App() {
   return (
     <>
    <Header/>
-   <MainContainer/>
-   <AboutUs/>
+  <Outlet/>
+  
     </>
   )
 }
