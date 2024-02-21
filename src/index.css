@@ -1,0 +1,65 @@
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-image: linear-gradient(to right, purple, blue);
+}
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 48px;
+  text-align: center;
+}
+h3{
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.button{
+  background-color: purple;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  /* Align navigation to the right */
+  align-items: center;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  /* Add border-radius for a rounded look */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
+}
+
+nav a:hover {
+  color: black;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: align;
+}
+
+.text-warning {
+  margin: 0;
+  justify-content: center;
+  /* To remove default margin on the h1 element */
+}
