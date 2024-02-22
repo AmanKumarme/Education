@@ -1,12 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const MainContainer = () => {
   return (
     <main style={{ height:'80vh'}}>
       <div className='d-flex align-items-center justify-content-center gap-3' style={{height:"55vh"}}>
-        <button className='fs-2 text-white fw-bold button'>
-            Training
-        </button>
+          <Link to="/Training">  
+            <button className='fs-2 text-white fw-bold button'>
+              Training
+            </button>
+          </Link>
         <button className='fs-2 text-white fw-bold button'>
             Development
         </button>

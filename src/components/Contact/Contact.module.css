@@ -1,0 +1,21 @@
+.formContainer {
+    width: 100%;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    height: 300px;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form div input,
+select {
+    margin: 10px auto;
+    width: 90%;
+}
