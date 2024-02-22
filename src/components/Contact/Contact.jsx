@@ -9,7 +9,7 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:3000/demo',{
+    const response = await fetch('https://backend-reg-form-3.onrender.com/demo',{
       method:"POST",
       body: JSON.stringify(registration),
       headers: {
@@ -30,7 +30,7 @@ function Contact() {
 
   return (
      <div className="formContainer py-5">
-      <h4 className="text-center display-4">Register Here</h4>
+      <h4 className="text-center text-white display-4">Register Here</h4>
      <form action="/register" onSubmit={handleSubmit}>
       <div>
         <input className="form-control py-2" required type="text" onChange={handleChange} value={registration.name} name="name" placeholder="Enter Your Name" />
