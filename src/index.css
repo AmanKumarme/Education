@@ -63,3 +63,10 @@ nav a:hover {
   justify-content: center;
   /* To remove default margin on the h1 element */
 }
+
+.learn_more{
+  background-color: purple;
+}
+.learn_more:hover{
+  background-color: aliceblue;
+}

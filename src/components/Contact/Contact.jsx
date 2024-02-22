@@ -29,7 +29,7 @@ function Contact() {
   }
 
   return (
-     <div className="formContainer py-5">
+     <div className="formContainer py-1">
       <h4 className="text-center text-white display-4">Register Here</h4>
      <form action="/register" onSubmit={handleSubmit}>
       <div>

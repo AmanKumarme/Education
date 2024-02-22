@@ -1,8 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import "./ServiceSlider.module.css"
+import "./ServiceSlider.css";
 
-export default function ServiceSlider() {
+export default function ServiceSlider(trainingArr) {
+  console.log(trainingArr);
   var settings = {
     dots: true,
     infinite: false,
@@ -39,29 +40,30 @@ export default function ServiceSlider() {
       }
     ]
   };
+ 
   return (
     <Slider {...settings}>
-     <div className="serviceContainer text-center bg-light text-blue py-5" style={{height: "200px", padding:"20px"}}>
+     <div className="serviceContainer text-center bg-light py-5">
         <h3 style={{color: "purple", marginBottom:"20px"}}>PROGRAMMING</h3>
-        <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
+        <button className="btn text-white learn_more" style={{backgroundColor:"purple"}}>Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light text-blue py-5 " style={{height: "200px", padding:"20px"}}>
+      <div className="serviceContainer text-center bg-light py-5 ">
         <h3 style={{color: "purple", marginBottom:"20px"}}>WEB DEVELOPMENT</h3>
         <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light text-blue py-5 " style={{height: "200px", padding:"20px"}}>
+      <div className="serviceContainer text-center bg-light py-5 ">
         <h3 style={{color: "purple", marginBottom:"20px"}}>DATABASE</h3>
         <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light text-blue py-5 " style={{height: "200px", padding:"20px"}}>
+      <div className="serviceContainer text-center bg-light py-5 ">
         <h3 style={{color: "purple", marginBottom:"20px"}}>PROGRAMMING</h3>
         <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light text-blue py-5 " style={{height: "200px", padding:"20px"}}>
+      <div className="serviceContainer text-center bg-light py-5 ">
         <h3 style={{color: "purple", marginBottom:"20px"}}>WEB DEVELOPMENT</h3>
         <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light text-blue py-5 " style={{height: "200px", padding:"20px"}}>
+      <div className="serviceContainer text-center bg-light py-5 ">
         <h3 style={{color: "purple", marginBottom:"20px"}}>DATABASE</h3>
         <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
       </div>

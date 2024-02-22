@@ -1,5 +1,4 @@
 import React from "react";
-import ServiceSlider from "./ServiceSlider";
 
 const AboutUs = () => {
   return (
@@ -21,7 +20,6 @@ const AboutUs = () => {
         curve, Param Computers is here to help you succeed. Join us and embark on a
         transformative learning experience that will shape your future in the digital age.
       </p>
-      <ServiceSlider/>
     </div>
   );
 };
