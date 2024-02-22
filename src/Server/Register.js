@@ -22,7 +22,7 @@ async function main() {
     try{
         await mongoose.connect(process.env.MONGO_URI);
         //  await Registration.insertMany(student1);
-        console.log(MongoDB host: ${mongoose.connection.host});
+        console.log(`MongoDB host: ${mongoose.connection.host}`);
         // console.log(data);
         server.post('/demo',async (req,res)=> {
             try {
@@ -121,5 +121,5 @@ server.get('/demo',(req,res) => {
     res.json(postedData);
 })
 server.listen(port, () => {
-    console.log(Successfully running on port ${port});
+    console.log(`Successfully running on port ${port}`);
 });
