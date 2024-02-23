@@ -11,6 +11,10 @@ import Training from './components/Training/Training.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Development from './components/Development/Development.jsx';
 import MainContainer from './components/MainComp/MainContainer.jsx';
+import WebDevelopment from './courses/WebDevelopment/WebDevelopment.jsx';
+import Database from './courses/Database/Database.jsx';
+import Programming from './courses/Programming/Programming.jsx';
+import DigitalMarketing from './courses/DigitalMarketing/DigitalMarketing.jsx';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -35,6 +39,22 @@ const router = createBrowserRouter([{
     {
       path: '/development',
       element: <Development/>
+    },
+    {
+      path: '/web-development-course',
+      element:<WebDevelopment/>
+    },
+    {
+      path: '/database-course',
+      element:<Database/>
+    },
+    {
+      path: '/programming-course',
+      element:<Programming/>
+    },
+    {
+      path: '/digital-marketing-course',
+      element:<DigitalMarketing/>
     }
   ]
 }])

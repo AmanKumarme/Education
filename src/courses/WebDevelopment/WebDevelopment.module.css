@@ -3,10 +3,11 @@
 }
 
 .form {
-    width: 500px;
+    width: 100%;
     margin: auto;
     height: 300px;
 }
+
 .form div {
     width: 100%;
     display: flex;
@@ -17,7 +18,7 @@
     margin: 10px auto;
     width: 90%;
 }
-.form div select{
+.form div select {
     margin: 10px auto;
     width: 90%;
 }

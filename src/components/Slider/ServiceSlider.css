@@ -9,9 +9,12 @@
 }
 .serviceContainer button:hover {
   background-color: blue;
-  padding: 10px 20px;
+  scale: 1.1;
   font-size: large  ;
 }
+
+
+/** Programming */
 .programming h3 {
   color: purple;
   margin-bottom: 20px;
@@ -30,6 +33,7 @@
   color: #fff;
 }
 
+/** Web Development */
 .web_development h3 {
   color: purple;
   margin-bottom: 20px;
@@ -49,6 +53,7 @@
   color: #fff;
 }
 
+/** Database */
 .database h3 {
   color: purple;
   margin-bottom: 20px;
@@ -65,5 +70,70 @@
 }
 
 .database:hover h3 {
+  color: #fff;
+}
+
+/** App Development */
+
+.app_development h3{
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.app_development:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("app_development.jpg");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.app_development:hover h3 {
+  color: #fff;
+}
+
+/** Software Development */
+.software_development h3{
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.software_development:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("software_development.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.software_development:hover h3 {
+  color: #fff;
+}
+
+/** Digital Marketing */
+.digital_marketing h3{
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.digital_marketing:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("digital_marketing.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.digital_marketing:hover h3 {
   color: #fff;
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Contact.module.css";
+import styles from "./Contact.module.css";
 
 function Contact() {
 
@@ -29,9 +29,9 @@ function Contact() {
   }
 
   return (
-     <div className="formContainer py-1">
+     <div className={`${styles.formContainer} py-1`}>
       <h4 className="text-center text-white display-4">Register Here</h4>
-     <form action="/register" onSubmit={handleSubmit}>
+     <form  className={styles.form} action="/register" onSubmit={handleSubmit}>
       <div>
         <input className="form-control py-2" required type="text" onChange={handleChange} value={registration.name} name="name" placeholder="Enter Your Name" />
       </div>

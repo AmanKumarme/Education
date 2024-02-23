@@ -26,6 +26,10 @@ h3{
   padding: 5px 15px;
   border-radius: 15px;
   border: none;
+  transition: all 0.8s ease;
+}
+.button:hover{
+  scale: 1.1;
 }
 
 nav {
@@ -64,12 +68,6 @@ nav a:hover {
   /* To remove default margin on the h1 element */
 }
 
-.learn_more{
-  background-color: purple;
-}
-.learn_more:hover{
-  background-color: aliceblue;
-}
 
 .option_sidebar{
   display: none;
@@ -87,7 +85,13 @@ nav a:hover {
   justify-content: center;
   background-image: linear-gradient(to right, purple, blue);
  }
-
+ 
+ ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
 @media screen and (max-width:1000px) {
   .option_sidebar{
     display: block;

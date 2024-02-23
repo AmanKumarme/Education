@@ -1,9 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import "./ServiceSlider.css";
+import { Link } from "react-router-dom";
 
-export default function ServiceSlider(trainingArr) {
-  console.log(trainingArr);
+export default function TrainingSlider() {
+ 
   var settings = {
     dots: true,
     infinite: false,
@@ -40,33 +41,29 @@ export default function ServiceSlider(trainingArr) {
       }
     ]
   };
- 
+
   return (
     <Slider {...settings} className="mt-5">
      <div className="serviceContainer programming bg-light d-flex flex-column align-items-center justify-content-center text-center">
         <h3>PROGRAMMING</h3>
-        <button className="btn text-white learn_more" >Learn more</button>
+        <Link to='/programming-course'>
+        <button className="btn text-white">Learn more</button>
+        </Link>
       </div>
       <div className="serviceContainer web_development bg-light d-flex flex-column align-items-center justify-content-center text-center" >
         <h3>WEB DEVELOPMENT</h3>
-        <button className="btn text-white" >Learn more</button>
+        <Link to="/web-development-course">
+        <button className="btn text-white">Learn more</button>
+        </Link>
+        
       </div>
       <div className="serviceContainer database bg-light d-flex flex-column align-items-center justify-content-center text-center" >
         <h3>DATABASE</h3>
+        <Link to='/database-course'>
         <button className="btn text-white" >Learn more</button>
+        </Link>
       </div>
-      <div className="serviceContainer programming bg-light d-flex flex-column align-items-center justify-content-center text-center">
-        <h3>PROGRAMMING</h3>
-        <button className="btn text-white learn_more" >Learn more</button>
-      </div>
-      <div className="serviceContainer web_development bg-light d-flex flex-column align-items-center justify-content-center text-center" >
-        <h3>WEB DEVELOPMENT</h3>
-        <button className="btn text-white" >Learn more</button>
-      </div>
-      <div className="serviceContainer database bg-light d-flex flex-column align-items-center justify-content-center text-center" >
-        <h3>DATABASE</h3>
-        <button className="btn text-white" >Learn more</button>
-      </div>
+     
   </Slider>
   );
 }
