@@ -42,30 +42,30 @@ export default function ServiceSlider(trainingArr) {
   };
  
   return (
-    <Slider {...settings}>
-     <div className="serviceContainer text-center bg-light py-5">
-        <h3 style={{color: "purple", marginBottom:"20px"}}>PROGRAMMING</h3>
-        <button className="btn text-white learn_more" style={{backgroundColor:"purple"}}>Learn more</button>
+    <Slider {...settings} className="mt-5">
+     <div className="serviceContainer programming bg-light d-flex flex-column align-items-center justify-content-center text-center">
+        <h3>PROGRAMMING</h3>
+        <button className="btn text-white learn_more" >Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light py-5 ">
-        <h3 style={{color: "purple", marginBottom:"20px"}}>WEB DEVELOPMENT</h3>
-        <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
+      <div className="serviceContainer web_development bg-light d-flex flex-column align-items-center justify-content-center text-center" >
+        <h3>WEB DEVELOPMENT</h3>
+        <button className="btn text-white" >Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light py-5 ">
-        <h3 style={{color: "purple", marginBottom:"20px"}}>DATABASE</h3>
-        <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
+      <div className="serviceContainer database bg-light d-flex flex-column align-items-center justify-content-center text-center" >
+        <h3>DATABASE</h3>
+        <button className="btn text-white" >Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light py-5 ">
-        <h3 style={{color: "purple", marginBottom:"20px"}}>PROGRAMMING</h3>
-        <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
+      <div className="serviceContainer programming bg-light d-flex flex-column align-items-center justify-content-center text-center">
+        <h3>PROGRAMMING</h3>
+        <button className="btn text-white learn_more" >Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light py-5 ">
-        <h3 style={{color: "purple", marginBottom:"20px"}}>WEB DEVELOPMENT</h3>
-        <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
+      <div className="serviceContainer web_development bg-light d-flex flex-column align-items-center justify-content-center text-center" >
+        <h3>WEB DEVELOPMENT</h3>
+        <button className="btn text-white" >Learn more</button>
       </div>
-      <div className="serviceContainer text-center bg-light py-5 ">
-        <h3 style={{color: "purple", marginBottom:"20px"}}>DATABASE</h3>
-        <button className="btn text-white" style={{backgroundColor:"purple"}}>Learn more</button>
+      <div className="serviceContainer database bg-light d-flex flex-column align-items-center justify-content-center text-center" >
+        <h3>DATABASE</h3>
+        <button className="btn text-white" >Learn more</button>
       </div>
   </Slider>
   );

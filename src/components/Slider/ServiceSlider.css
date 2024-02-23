@@ -1,10 +1,69 @@
-.serviceContainer{
-  
+.serviceContainer {
+  margin: 0 30px; /* Adjust the margin to add gap between the divs */
+  height: 400px; /* Increase the height of the div */
+  transition: all 0.8s ease;
+}
+.serviceContainer button {
+  background-color: purple;
+  transition: all 0.4s ease;
+}
+.serviceContainer button:hover {
+  background-color: blue;
+  padding: 10px 20px;
+  font-size: large  ;
+}
+.programming h3 {
+  color: purple;
+  margin-bottom: 20px;
+}
+.programming:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("programming.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.programming:hover h3 {
+  color: #fff;
 }
 
-.learn_more{
-  background-color: purple;
+.web_development h3 {
+  color: purple;
+  margin-bottom: 20px;
 }
-.learn_more:hover{
- color: aliceblue;
+.web_development:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("web_development.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.web_development:hover h3 {
+  color: #fff;
+}
+
+.database h3 {
+  color: purple;
+  margin-bottom: 20px;
+}
+.database:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("database.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.database:hover h3 {
+  color: #fff;
 }
