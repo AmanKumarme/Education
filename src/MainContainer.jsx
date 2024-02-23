@@ -5,14 +5,16 @@ const MainContainer = () => {
   return (
     <main style={{ height:'80vh'}}>
       <div className='d-flex align-items-center justify-content-center gap-3' style={{height:"55vh"}}>
-          <Link to="/Training">  
+          <Link to="/training">  
             <button className='fs-2 text-white fw-bold button'>
               Training
             </button>
           </Link>
+          <Link to="/development">
         <button className='fs-2 text-white fw-bold button'>
             Development
         </button>
+        </Link>
         </div>
         <div className='text-align-left text-white'>
         <h3>Talk To Us</h3>

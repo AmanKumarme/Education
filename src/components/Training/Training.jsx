@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 import React from 'react';
 import SwiperCore, { EffectCoverflow, Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './swiper.css';
 import './Training.css'; // Import your CSS file
+=======
+import React from "react";
+import ServiceSlider from "../Slider/ServiceSlider";
+// import ServiceSlider from "../../ServiceSlider";
+>>>>>>> 4253a489ceea70a6dfceaf8cc9be34a2c470902e
 
 const Training = () => {
   // Initialize Swiper
@@ -16,6 +22,7 @@ const Training = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <Swiper
       effect="coverflow"
       grabCursor
@@ -46,6 +53,12 @@ const Training = () => {
         </SwiperSlide>
       ))}
     </Swiper>
+=======
+    <div className="mt-5 text-white px-5">
+      <h2 className="text-center">Training</h2>
+      <ServiceSlider  />
+    </div>
+>>>>>>> 4253a489ceea70a6dfceaf8cc9be34a2c470902e
   );
 };
 
