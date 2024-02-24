@@ -63,7 +63,7 @@ export default function TrainingSlider() {
         <button className="btn text-white" >Learn more</button>
         </Link>
       </div>
-      <div className="serviceContainer database bg-light d-flex flex-column align-items-center justify-content-center text-center" >
+      <div className="serviceContainer excel bg-light d-flex flex-column align-items-center justify-content-center text-center" >
         <h3>ADVANCE EXCEL</h3>
         <Link to='/excel-course'>
         <button className="btn text-white" >Learn more</button>

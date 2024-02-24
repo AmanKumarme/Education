@@ -54,6 +54,7 @@ const WebDevelopmentForm = () => {
     <div>
     <select className="form-control py-2" required onChange={handleChange} name="courses" id="">
         <option value="">Select courses</option>
+        <option value="HTML CSS & Javascript">HTML CSS & Javascript</option>
         <option value="Frontend Web Development">Frontend Web Development</option>
         <option value="Backend Web Development">Backend Web Development</option>
         <option value="Full Stack Web Development">Full Stack Web Development</option>
