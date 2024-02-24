@@ -3,12 +3,12 @@ import WebDevlopmentStyles from './WebDevelopment.module.css';
 
 const WebDevelopmentForm = () => {
     const [registration,setRegistration] = useState({
-        name:"", email:"", date:"", age:"",gender:"",address:"",courses:"",
+        name:"", email:"", date:"", age:"",gender:"",address:"",courses:"",courseType:"Web Development"
       });
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('https://backend-reg-form-3.onrender.com/demo',{
+        const response = await fetch('https://backend-reg-form-1.onrender.com/demo',{
           method:"POST",
           body: JSON.stringify(registration),
           headers: {
@@ -59,6 +59,7 @@ const WebDevelopmentForm = () => {
         <option value="Full Stack Web Development">Full Stack Web Development</option>
       </select>
     </div>
+    <input className="form-control py-2" type="hidden" value="Web Development"/>
     <div>
       <input className="btn btn-success" type="submit" value="Submit" />
     </div>

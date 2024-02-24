@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import DatabaseStyles from './Database.module.css';
+import React, { useState } from 'react'
+import AppStyles from "./AppDev.module.css";
 
-const DatabaseForm = () => {
+const AppDevelopmentForm = () => {
+
     const [registration,setRegistration] = useState({
-        name:"", email:"", date:"", age:"",gender:"",address:"",courses:"",courseType:"Database"
+        name:"", email:"", date:"", age:"",gender:"",address:"",courses:"",courseType:"App development"
       });
     
       const handleSubmit = async (e) => {
@@ -27,8 +28,8 @@ const DatabaseForm = () => {
        
       }
   return (
-    <div className={`${DatabaseStyles.formContainer}`}>
-    <form className={DatabaseStyles.form} action="/register" onSubmit={handleSubmit}>
+    <div className={`${AppStyles.formContainer}`}>
+    <form className={AppStyles.form} action="/register" onSubmit={handleSubmit}>
      <div>
        <input className="form-control py-1" required type="text" onChange={handleChange} value={registration.name} name="name" placeholder="Enter Your Name" />
      </div>
@@ -54,18 +55,16 @@ const DatabaseForm = () => {
      <div>
      <select className="form-control py-2" required onChange={handleChange} name="courses" id="">
          <option value="">Select courses</option>
-         <option value="SQL form Database">Structure Query Language (SQL)</option>
-         <option value="MongoDB from Database">MongoDB</option>
+         <option value="Android App Development">Android App Development</option>
        </select>
      </div>
-     <input className="form-control py-2" type="hidden" value="Database" />
+     <input className="form-control py-2" type="hidden" value="App Development" />
      <div>
        <input className="btn btn-success" type="submit" value="Submit" />
      </div>
     </form>
     </div>
- 
   )
 }
 
-export default DatabaseForm
+export default AppDevelopmentForm

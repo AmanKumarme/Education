@@ -4,33 +4,41 @@ import WebDevelopmentForm from "./WebDevelopmentForm";
 const WebDevelopment = () => {
   return (
     <>
-    <div className="container text-white text-left">
-     <h2 className="fs-1 text-center">Web Development</h2>
-     <div className="container mt-5 text-center">
-      <ul>
-      <li className="fs-5">
-        Learn Essentials of HTML CSS Javascript and other key web technologies.
-      </li>
-      <li className="fs-5">
-        Build dynamic, responsive websites from scratch using popular frameworks
-        and libraries such as React, Angular and Vue.js
-      </li >
-      <li className="fs-5">
-        Gain Proficiency in backend development with languages like Node.js, PHP
-        and Python, and explore topics such as databases, APIs and server-side
-        rendering.
-      </li>
-      </ul>
-    
-     </div>
-     <div className="d-flex justify-content-center">
-     <button className="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#WebDevelopmentModal">
-        Register
-      </button>
-     </div>
-    </div>
+      <div className="container text-white text-left">
+        <h2 className="fs-1 text-center">Web Development</h2>
+        <div className="container mt-5 text-center">
 
-    <div
+          <p className="fs-5">
+            "Discover the power of crafting immersive digital experiences
+            through web development at Param Computers. Whether you're drawn to
+            the artistry of front-end design or the intricacies of back-end
+            functionality, our institution provides the perfect platform to hone
+            your skills. From mastering HTML, CSS, and JavaScript to delving
+            into frameworks like React and Angular, our comprehensive courses
+            cover the full spectrum of web development technologies. Led by
+            seasoned professionals, our programs blend theory with hands-on
+            practice, ensuring you're equipped to tackle real-world challenges
+            in the ever-evolving digital landscape. Join our dynamic learning
+            community online or offline, and unlock the potential to create
+            captivating websites and web applications that leave a lasting
+            impact. Embrace the future of digital innovation with Param
+            Computers. Enroll now and embark on a journey to become a proficient
+            web developer."
+          </p>
+        </div>
+        <div className="d-flex justify-content-center">
+          <button
+            className="btn btn-success"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#WebDevelopmentModal"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+
+      <div
         className="modal fade"
         id="WebDevelopmentModal"
         tabIndex="-1"
@@ -50,10 +58,9 @@ const WebDevelopment = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body" style={{height:"500px"}}>
-                <WebDevelopmentForm/>
+            <div className="modal-body" style={{ height: "500px" }}>
+              <WebDevelopmentForm />
             </div>
-            
           </div>
         </div>
       </div>

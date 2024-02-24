@@ -3,12 +3,12 @@ import ProgrammingStyles from './ProgrammingForm.module.css';
 
 const ProgrammingForm = () => {
     const [registration,setRegistration] = useState({
-        name:"", email:"", date:"", age:"",gender:"",address:"",courses:"",
+        name:"", email:"", date:"", age:"",gender:"",address:"",courses:"", courseType:"Programming"
       });
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('https://backend-reg-form-3.onrender.com/demo',{
+        const response = await fetch('https://backend-reg-form-1.onrender.com/demo',{
           method:"POST",
           body: JSON.stringify(registration),
           headers: {
@@ -54,12 +54,13 @@ const ProgrammingForm = () => {
     <div>
     <select className="form-control py-2" required onChange={handleChange} name="courses" id="">
         <option value="">Select courses</option>
-        <option value="Programming with C">C</option>
-        <option value="Programming with C++">C++</option>
-        <option value="Programming with Python">Python</option>
-        <option value="Programming with Java">Java</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
       </select>
     </div>
+ 
     <div>
       <input className="btn btn-success" type="submit" value="Submit" />
     </div>

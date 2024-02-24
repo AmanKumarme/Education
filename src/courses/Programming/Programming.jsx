@@ -7,21 +7,20 @@ const Programming = () => {
       <div className="container text-white text-left">
         <h2 className="fs-1 text-center">Programming</h2>
         <div className="container mt-5 text-center">
-          <ul>
-            <li className="fs-5">
-              Master fundamental programming languages such as Python, Java,
-              C++, and more.
-            </li>
-            <li className="fs-5">
-              Dive into advance concepts including data structures, algorithms,
-              object-oriented programming, and software development
-              methodologies.
-            </li>
-            <li className="fs-5">
-              Hone your problem-solving abilities and solidify your knowledge
-              through hands-on coding exercises and projects.
-            </li>
-          </ul>
+          <p className="fs-5">
+            "Embark on a journey of innovation and mastery with programming
+            languages at Param Computers. Whether you're a novice or seasoned
+            coder, our institution offers a dynamic learning environment
+            tailored to your needs. Dive into the world of programming
+            languages, where creativity meets problem-solving, and possibilities
+            are limitless. Gain expertise in languages like Python, JavaScript,
+            Java, C++, and more, unlocking doors to lucrative career
+            opportunities in tech. Our comprehensive courses, led by industry
+            experts, ensure you develop the skills demanded by today's digital
+            landscape. Join us online or offline and become part of a vibrant
+            community dedicated to shaping the future through code. Enroll now
+            and ignite your passion for programming at Param Computers."
+          </p>
         </div>
         <div className="d-flex justify-content-center">
           <button
@@ -55,10 +54,9 @@ const Programming = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body" style={{height:"500px"}}>
-                <ProgrammingForm/>
+            <div className="modal-body" style={{ height: "500px" }}>
+              <ProgrammingForm />
             </div>
-            
           </div>
         </div>
       </div>

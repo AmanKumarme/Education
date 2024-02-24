@@ -15,6 +15,8 @@ import WebDevelopment from './courses/WebDevelopment/WebDevelopment.jsx';
 import Database from './courses/Database/Database.jsx';
 import Programming from './courses/Programming/Programming.jsx';
 import DigitalMarketing from './courses/DigitalMarketing/DigitalMarketing.jsx';
+import AppDevelopment from './courses/AppDevelopment/AppDevelopment.jsx';
+import SoftwareDevelopment from './courses/SoftwareDevelopment/SoftwareDevelopment.jsx';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -55,6 +57,14 @@ const router = createBrowserRouter([{
     {
       path: '/digital-marketing-course',
       element:<DigitalMarketing/>
+    },
+    {
+      path: '/app-development-course',
+      element:<AppDevelopment/>
+    },
+    {
+      path: '/software-development-course',
+      element:<SoftwareDevelopment/>
     }
   ]
 }])

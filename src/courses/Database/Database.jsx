@@ -4,56 +4,65 @@ import DatabaseForm from "./DatabaseForm";
 const Database = () => {
   return (
     <>
-    <div className="container text-white text-left">
-      <h2 className="fs-1 text-center">Database</h2>
-      <div className="container mt-5 text-center">
-        <ul>
-          <li className="fs-5">
-            Understand the fundamentals of database design, normalization and
-            administration.
-          </li>
-          <li className="fs-5">
-            Master SQL and database querying techniques for efficient data
-            manipulation and retrieval.
-          </li>
-          <li className="fs-5">
-            Explore advance database concepts such as optimization, transaction
-            management, and data sequirity protocols.
-          </li>
-        </ul>
+      <div className="container text-white text-left">
+        <h2 className="fs-1 text-center">Database</h2>
+        <div className="container mt-5 text-center">
+          <p className="fs-5">
+            "Uncover the backbone of modern data-driven applications with
+            Database Management Systems at Param Computers. Dive into the heart
+            of information organization, storage, and retrieval, mastering
+            essential concepts and cutting-edge technologies. From relational
+            databases like MySQL and PostgreSQL to NoSQL solutions like MongoDB,
+            our courses cover a diverse array of database systems to suit every
+            need. Learn from industry experts who will guide you through the
+            intricacies of database design, optimization, and administration,
+            empowering you to build robust, scalable data solutions. Whether
+            you're a beginner or seasoned professional, our flexible online or
+            offline programs provide the perfect environment to elevate your
+            skills and excel in the world of data management. Join us at Param
+            Computers and embark on a journey to become a proficient database
+            administrator or developer. Enroll now and unlock the gateway to a
+            rewarding career in the realm of data."
+          </p>
+        </div>
+        <div className="d-flex justify-content-center">
+          <button
+            className="btn btn-success"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#databaseModal"
+          >
+            Register
+          </button>
+        </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <button className="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#databaseModal">Register</button>
+      <div
+        className="modal fade"
+        id="databaseModal"
+        tabIndex="-1"
+        aria-labelledby="databaseModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="databaseModalLabel">
+                Registration Form for Database
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body" style={{ height: "500px" }}>
+              <DatabaseForm />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-       <div
-       className="modal fade"
-       id="databaseModal"
-       tabIndex="-1"
-       aria-labelledby="databaseModalLabel"
-       aria-hidden="true"
-     >
-       <div className="modal-dialog">
-         <div className="modal-content">
-           <div className="modal-header">
-             <h1 className="modal-title fs-5" id="databaseModalLabel">
-               Registration Form for Database
-             </h1>
-             <button
-               type="button"
-               className="btn-close"
-               data-bs-dismiss="modal"
-               aria-label="Close"
-             ></button>
-           </div>
-           <div className="modal-body" style={{height:"500px"}}>
-               <DatabaseForm/>
-           </div>
-           
-         </div>
-       </div>
-     </div>
-     </>
+    </>
   );
 };
 
