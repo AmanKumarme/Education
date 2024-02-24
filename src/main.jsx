@@ -17,6 +17,7 @@ import Programming from './courses/Programming/Programming.jsx';
 import DigitalMarketing from './courses/DigitalMarketing/DigitalMarketing.jsx';
 import AppDevelopment from './courses/AppDevelopment/AppDevelopment.jsx';
 import SoftwareDevelopment from './courses/SoftwareDevelopment/SoftwareDevelopment.jsx';
+import Excel from './courses/Excel/Excel.jsx';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -65,6 +66,10 @@ const router = createBrowserRouter([{
     {
       path: '/software-development-course',
       element:<SoftwareDevelopment/>
+    },
+    {
+      path: '/excel-course',
+      element:<Excel/>
     }
   ]
 }])
