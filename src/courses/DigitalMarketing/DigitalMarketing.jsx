@@ -4,10 +4,10 @@ import DigitalMarketingForm from "./DigitalMarketingForm";
 const DigitalMarketing = () => {
   return (
     <>
-      <div className="container text-white">
-        <h2 className="fs-1 text-center">Digital Marketing</h2>
+      <div className="container text-white mt-5">
+        <h2 className="heading text-center">Digital Marketing</h2>
         <div className="container mt-5 text-center">
-          <p className="fs-5">
+          <p className="about-para">
             "Discover the dynamic world of digital marketing with Param
             Computers. From search engine optimization (SEO) to social media
             marketing and beyond, our comprehensive courses equip you with the

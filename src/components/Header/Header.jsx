@@ -17,23 +17,21 @@ const Header = () => {
           <img
             src="./Param_Computers_logo.jpg"
             alt="Param_Computers_logo"
-            width="100px"
-            height="100px"
+            className="logo"
           />
         </Link>
       </div>
 
       <div className="col-8">
         <div className="text-center">
-          <h1 className="text-warning">Param computerS</h1>
-          <h3 className="text-white">EMPOWERING MINDS. TRANSFORMING FUTURES</h3>
+          <h1 className="text-warning heading">Param computerS</h1>
+          <h3 className="text-white sub-heading">EMPOWERING MINDS. TRANSFORMING FUTURES</h3>
         </div>
       </div>
       <div className="col-2">
         <nav className="navigation">
           <Link to="/">Home</Link>
           <Link to="/aboutus">About</Link>
-          <Link to="/contact">Contact</Link>
         </nav>
         <div>
         <GiHamburgerMenu className="text-white fs-2 option_sidebar" style={{cursor:"pointer"}} onClick={handleShow}/>

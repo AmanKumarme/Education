@@ -4,10 +4,10 @@ import DatabaseForm from "./DatabaseForm";
 const Database = () => {
   return (
     <>
-      <div className="container text-white text-left">
-        <h2 className="fs-1 text-center">Database</h2>
+      <div className="container text-white text-left mt-5">
+        <h2 className="heading text-center">Database</h2>
         <div className="container mt-5 text-center">
-          <p className="fs-5">
+          <p className="about-para">
             "Uncover the backbone of modern data-driven applications with
             Database Management Systems at Param Computers. Dive into the heart
             of information organization, storage, and retrieval, mastering

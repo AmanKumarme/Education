@@ -4,10 +4,10 @@ import AppDevelopmentForm from "./AppDevelopmentForm";
 const AppDevelopment = () => {
   return (
     <>
-      <div className="container text-white">
-        <h2 className="fs-1 text-center">App Development</h2>
+      <div className="container text-white mt-5">
+        <h2 className="heading text-center">App Development</h2>
         <div className="container mt-5 text-center">
-          <p className="fs-5">
+          <p className="about-para">
             "Welcome to Application Development! At Param Computers, we are
             dedicated to providing expert application development solutions
             based on your needs and aspirations. We understand your business

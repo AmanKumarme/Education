@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="mt-5 text-white px-5">
-      <h2 className="text-center">About Us</h2>
-      <p className="fs-5 text-center">
+    <div className="mt-5 text-white px-sm-5">
+      <h2 className="text-center heading">About Us</h2>
+      <p className="about-para text-center">
         Welcome to Param Computers, a pioneer in computer eductaion since 2001.
         Founded by Prashant Mathur, our institution has been dedicated to
         empowering individuals with the knowledge and skills needed to thrive in

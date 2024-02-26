@@ -4,11 +4,11 @@ import WebDevelopmentForm from "./WebDevelopmentForm";
 const WebDevelopment = () => {
   return (
     <>
-      <div className="container text-white text-left">
-        <h2 className="fs-1 text-center">Web Development</h2>
+      <div className="container text-white text-left mt-5">
+        <h2 className="text-center heading">Web Development</h2>
         <div className="container mt-5 text-center">
 
-          <p className="fs-5">
+          <p className="about-para">
             "Discover the power of crafting immersive digital experiences
             through web development at Param Computers. Whether you're drawn to
             the artistry of front-end design or the intricacies of back-end

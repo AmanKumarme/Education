@@ -10,25 +10,29 @@ body {
   padding: 20px;
   background-image: linear-gradient(to right, purple, blue);
 }
-h1{
-  font-family: 'Times New Roman', Times, serif;
+.logo {
+  width: 100px;
+  height: 100px;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
   font-size: 48px;
   text-align: center;
 }
-h3{
+h3 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 100;
   font-style: normal;
 }
 
-.button{
+.button {
   background-color: purple;
   padding: 5px 15px;
   border-radius: 15px;
   border: none;
   transition: all 0.8s ease;
 }
-.button:hover{
+.button:hover {
   scale: 1.1;
 }
 
@@ -61,18 +65,22 @@ nav a:hover {
   align-items: center;
   justify-content: align;
 }
-
+.btn-font {
+  font-size: 24px;
+}
 .text-warning {
   margin: 0;
   justify-content: center;
   /* To remove default margin on the h1 element */
 }
+.about-para{
+  font-size: 20px;
+}
 
-
-.option_sidebar{
+.option_sidebar {
   display: none;
 }
-.sidebar_navigation{
+.sidebar_navigation {
   position: fixed;
   padding-bottom: 200px;
   top: 0;
@@ -84,20 +92,38 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, purple, blue);
- }
- 
- ul{
+}
+
+ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
- }
-@media screen and (max-width:1000px) {
-  .option_sidebar{
+}
+@media screen and (max-width: 1000px) {
+  .option_sidebar {
     display: block;
   }
-  .navigation{
+  .navigation {
     display: none;
   }
- 
+}
+
+@media screen and (max-width: 530px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .heading {
+    font-size: 18px;
+  }
+  .sub-heading {
+    font-size: 15px;
+  }
+  .btn-font {
+    font-size: 15px;
+  }
+  .about-para {
+    font-size: 15px;
+  }
 }

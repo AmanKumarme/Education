@@ -4,10 +4,10 @@ import ProgrammingForm from "./ProgrammingForm";
 const Programming = () => {
   return (
     <>
-      <div className="container text-white text-left">
-        <h2 className="fs-1 text-center">Programming</h2>
+      <div className="container text-white text-left mt-5">
+        <h2 className="heading text-center">Programming</h2>
         <div className="container mt-5 text-center">
-          <p className="fs-5">
+          <p className="about-para">
             "Embark on a journey of innovation and mastery with programming
             languages at Param Computers. Whether you're a novice or seasoned
             coder, our institution offers a dynamic learning environment
