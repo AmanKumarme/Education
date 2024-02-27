@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const MainContainer = () => {
   return (
     <main>
-      <div className='d-flex flex-md-row align-items-center justify-content-center gap-3 flex-column' style={{height:"63vh"}}>
+      <div className='d-flex flex-md-row align-items-center justify-content-center gap-3 flex-column main-container'>
           <Link to="/training">  
             <button className='btn-font text-white fw-bold button'>
               For Trainees

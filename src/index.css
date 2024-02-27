@@ -24,7 +24,9 @@ h3 {
   font-weight: 100;
   font-style: normal;
 }
-
+.main-container{
+  height: 63vh;
+}
 .button {
   background-color: purple;
   padding: 5px 15px;
@@ -92,6 +94,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, purple, blue);
+  z-index: 1;
 }
 
 ul {
@@ -125,5 +128,8 @@ ul {
   }
   .about-para {
     font-size: 15px;
+  }
+  .main-container{
+    height: 66vh;
   }
 }
