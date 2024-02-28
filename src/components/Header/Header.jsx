@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 
 const Header = () => {
   const [show , setShow] = useState(false);
-  console.log(show);
+ 
   const handleShow = () =>{
     setShow(true);
   }

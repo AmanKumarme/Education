@@ -5,12 +5,9 @@ import { Link } from "react-router-dom";
 
 export default function DevelopmentSlider() {
   const [flip, setFlip] = useState(false);
-  console.log("flip :", flip);
  const handleCard = () => {
-  console.log("clicked");
   setFlip(true);
  }
- console.log("flip :", flip);
   var settings = {
     dots: true,
     infinite: false,
