@@ -11,8 +11,8 @@ const Header = () => {
   }
   return (
     <>
-    <header className="row">
-      <div className="col-2">
+    <header className="row header">
+      <div className="col-2"> 
         <Link to="/">
           <img
             src="./Param_Computers_logo.jpg"

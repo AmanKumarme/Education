@@ -7,11 +7,15 @@ export default function TrainingSlider() {
  
   var settings = {
     dots: true,
-    infinite: false,
-    speed: 500,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     innerWidth:"90%",
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnHover: true,
     initialSlide: 0,
     adaptiveHeight: true,
     responsive: [

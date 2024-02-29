@@ -1,6 +1,5 @@
 .serviceContainer {
-  margin: 0 30px; /* Adjust the margin to add gap between the divs */
-  height: 400px; /* Increase the height of the div */
+  height: 300px; /* Increase the height of the div */
   transition: all 0.8s ease;
 }
 .serviceContainer button {
@@ -157,4 +156,98 @@
 
 .excel:hover h3 {
   color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+  .programming {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .programming h3{
+    color: #fff;
+  }
+  .web_development {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://cdn1.vectorstock.com/i/1000x1000/50/45/business-concept-background-web-development-vector-38735045.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .web_development h3{
+    color: #fff;
+  }
+  .database {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://c8.alamy.com/comp/T495XD/nosql-structured-query-language-database-technology-concept-server-room-background-T495XD.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .database h3{
+    color: #fff;
+  }
+  .excel {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://e1.pxfuel.com/desktop-wallpaper/490/1/desktop-wallpaper-microsoft-excel-backgrounds-excel.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .excel h3{
+    color: #fff;
+  }
+  .app_development {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://c0.wallpaperflare.com/preview/379/493/189/concept-development-device-flat.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .app_development h3{
+    color: #fff;
+  }
+  .software_development {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://thumbs.dreamstime.com/b/software-development-word-cloud-concept-grey-background-88535408.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .software_development h3 {
+    color: #fff;
+  }
+  .digital_marketing {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://www.simplilearn.com/ice9/free_resources_article_thumb/history_and_evolution_of_digital_marketing.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .digital_marketing h3{
+    color: #fff;
+  }
 }

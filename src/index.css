@@ -3,12 +3,17 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
   padding: 20px;
   background-image: linear-gradient(to right, purple, blue);
+}
+.header{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding:  10px 20px;
+  margin: auto;
 }
 .logo {
   width: 100px;
@@ -25,7 +30,7 @@ h3 {
   font-style: normal;
 }
 .main-container{
-  height: 63vh;
+  height: 60vh;
 }
 .button {
   background-color: purple;
