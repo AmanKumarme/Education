@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import AppDevelopmentForm from "./AppDevelopmentForm";
+import Alert from "../../alert";
 
 const AppDevelopment = () => {
+  const [success, setSuccess] = useState(false);
+  setTimeout(() =>{
+    setSuccess(false);
+  },4000)
   return (
     <>
       <div className="container text-white mt-5">
@@ -53,11 +58,12 @@ const AppDevelopment = () => {
               ></button>
             </div>
             <div className="modal-body" style={{ height: "500px" }}>
-              <AppDevelopmentForm />
+              <AppDevelopmentForm success={success} setSuccess={setSuccess}/>
             </div>
           </div>
         </div>
       </div>
+      {success && <Alert name={"App Development"} />}
     </>
   );
 };

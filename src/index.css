@@ -108,12 +108,41 @@ ul {
   flex-direction: column;
   gap: 20px;
 }
+.alert{
+  width: 50%;
+  margin: auto;
+}
+.whatsapp-logo{
+  transition: all 0.5s ease-in-out;
+}
+.whatsapp:hover .whatsapp-logo{
+ scale: 1.2;
+}
+.email-logo{
+  transition: all 0.5s ease-in-out;
+}
+.email:hover .email-logo{
+ scale: 1.2;
+}
+.loaction-logo{
+  transition: all 0.5s ease-in-out;
+}
+.loaction:hover .loaction-logo{
+ scale: 1.2;
+}
+.address{
+  height: 400px;
+}
 @media screen and (max-width: 1000px) {
   .option_sidebar {
     display: block;
   }
   .navigation {
     display: none;
+  }
+  .alert{
+    width: 60%;
+    margin: auto;
   }
 }
 
@@ -136,5 +165,11 @@ ul {
   }
   .main-container{
     height: 66vh;
+  }
+  .alert{
+    width: 100%;
+  }
+  .address{
+    height: 800px;
   }
 }

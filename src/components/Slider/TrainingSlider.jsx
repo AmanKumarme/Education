@@ -12,7 +12,6 @@ export default function TrainingSlider() {
     slidesToScroll: 1,
     innerWidth:"90%",
     autoplay: true,
-    speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
     pauseOnHover: true,

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DigitalStyles from "./Digital.module.css";
 
-const DigitalMarketingForm = () => {
+const DigitalMarketingForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
     name: "",
     email: "",
@@ -15,22 +15,40 @@ const DigitalMarketingForm = () => {
   console.log(registration);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://backend-reg-form-1.onrender.com/demo", {
-      method: "POST",
-      body: JSON.stringify(registration),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      "https://backend-reg-form-1.onrender.com/demo",
+      {
+        method: "POST",
+        body: JSON.stringify(registration),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const data = await response.json();
     console.log(data);
-    // setRegistration();
+    if(registration.name !== "" && registration.email !== "" && registration.date !== "" && registration.age !== "" && registration.gender !== "" && registration.address !== "" && registration.courses !== ""){
+      setSuccess(true);
+    }
+
+    setRegistration({
+      name: "",
+      email: "",
+      date: "",
+      age: "",
+      gender: "",
+      address: "",
+      courses: "",
+      courseType: "Advance Excel",
+    });
   };
   let name, value;
   const handleChange = (e) => {
     name = e.target.name;
     value = e.target.value;
-    setRegistration({ ...registration, [name]: value });
+   if(value !== ""){
+      setRegistration({ ...registration, [name]: value });
+    }
   };
   return (
     <div className={`${DigitalStyles.formContainer}`}>
@@ -120,9 +138,15 @@ const DigitalMarketingForm = () => {
             <option value="SEM">SEM</option>
           </select>
         </div>
-        
+
         <div>
-          <input className="btn btn-success" type="submit" value="Submit" />
+          <input
+            className="btn btn-success"
+            type="submit"
+            value="Submit"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          />
         </div>
       </form>
     </div>

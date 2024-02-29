@@ -1,9 +1,12 @@
-import React from "react";
-
+import React, { useState } from "react";
 import DigitalMarketingForm from "./DigitalMarketingForm";
+import Alert from "../../alert";
 
 const DigitalMarketing = () => {
-
+  const [success, setSuccess] = useState(false);
+  setTimeout(() =>{
+    setSuccess(false);
+  },4000)
 
   return (
     <>
@@ -60,11 +63,12 @@ const DigitalMarketing = () => {
               ></button>
             </div>
             <div className="modal-body" style={{ height: "500px" }}>
-              <DigitalMarketingForm />
+              <DigitalMarketingForm success={success} setSuccess={setSuccess}/>
             </div>
           </div>
         </div>
       </div>
+      {success && <Alert name={"Digital Marketing"} />}
     </>
   );
 };

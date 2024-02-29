@@ -7,6 +7,7 @@ const Sidebar = ({show, setShow}) => {
       <nav className="sidebar_navigation">
           <Link to="/" onClick={()=> setShow(false)}>Home</Link>
           <Link to="/aboutus" onClick={()=> setShow(false)}>About</Link>
+          <Link to="/contact" onClick={()=> setShow(false)}>Contact</Link>
           <RxCross1  className='text-white' onClick={()=> setShow(false)}/>
         </nav>
     </>

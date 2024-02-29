@@ -32,6 +32,7 @@ const Header = () => {
         <nav className="navigation">
           <Link to="/">Home</Link>
           <Link to="/aboutus">About</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
         <div>
         <GiHamburgerMenu className="text-white fs-2 option_sidebar" style={{cursor:"pointer"}} onClick={handleShow}/>

@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import WebDevelopmentForm from "./WebDevelopmentForm";
+import Alert from "../../alert";
 
 const WebDevelopment = () => {
+  const [success, setSuccess] = useState(false);
+  setTimeout(() => {
+    setSuccess(false);
+  }, 4000);
   return (
     <>
       <div className="container text-white text-left mt-5">
         <h2 className="text-center heading">Web Development</h2>
         <div className="container mt-5 text-center">
-
           <p className="about-para">
             "Discover the power of crafting immersive digital experiences
             through web development at Param Computers. Whether you're drawn to
@@ -59,11 +63,12 @@ const WebDevelopment = () => {
               ></button>
             </div>
             <div className="modal-body" style={{ height: "500px" }}>
-              <WebDevelopmentForm />
+              <WebDevelopmentForm success={success} setSuccess={setSuccess} />
             </div>
           </div>
         </div>
       </div>
+      {success && <Alert name={"Web Development"} />}
     </>
   );
 };

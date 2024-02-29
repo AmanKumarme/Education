@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import DatabaseForm from "./DatabaseForm";
+import Alert from "../../alert";
 
 const Database = () => {
+  const [success, setSuccess] = useState(false);
+  setTimeout(() =>{
+    setSuccess(false);
+  },4000)
   return (
     <>
       <div className="container text-white text-left mt-5">
@@ -57,11 +62,16 @@ const Database = () => {
               ></button>
             </div>
             <div className="modal-body" style={{ height: "500px" }}>
-              <DatabaseForm />
+              <DatabaseForm success={success} setSuccess={setSuccess}/>
             </div>
           </div>
         </div>
       </div>
+      {
+       
+        success && ( <Alert name={"database"} /> ) 
+      }
+ 
     </>
   );
 };

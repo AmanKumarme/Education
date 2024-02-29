@@ -17,6 +17,7 @@ import DigitalMarketing from './courses/DigitalMarketing/DigitalMarketing.jsx';
 import AppDevelopment from './courses/AppDevelopment/AppDevelopment.jsx';
 import SoftwareDevelopment from './courses/SoftwareDevelopment/SoftwareDevelopment.jsx';
 import Excel from './courses/Excel/Excel.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -29,6 +30,10 @@ const router = createBrowserRouter([{
     {
       path: '/aboutus',
       element: <AboutUs/>
+    },
+    {
+      path: '/contact',
+      element: <Contact/>
     },
     {
       path: '/training',
