@@ -108,7 +108,7 @@ const ProgrammingForm = ({success, setSuccess}) => {
             name="gender"
             id=""
           >
-            <option value="">Select Gender</option>
+            <option selected value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
@@ -132,7 +132,7 @@ const ProgrammingForm = ({success, setSuccess}) => {
             name="courses"
             id=""
           >
-            <option value="">Select courses</option>
+            <option selected value="">Select courses</option>
             <option value="C">C</option>
             <option value="C++">C++</option>
             <option value="Python">Python</option>
