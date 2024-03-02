@@ -12,7 +12,6 @@ const DigitalMarketingForm = ({success, setSuccess}) => {
     courses: "",
     courseType: "Digital Marketing",
   });
-  console.log(registration);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
@@ -108,6 +107,7 @@ const DigitalMarketingForm = ({success, setSuccess}) => {
             onChange={handleChange}
             name="gender"
             id=""
+            value={registration.gender}
           >
             <option value="">Select Gender</option>
             <option value="male">Male</option>
@@ -132,6 +132,7 @@ const DigitalMarketingForm = ({success, setSuccess}) => {
             onChange={handleChange}
             name="courses"
             id=""
+            value={registration.courses}
           >
             <option value="">Select courses</option>
             <option value="SEO">SEO</option>

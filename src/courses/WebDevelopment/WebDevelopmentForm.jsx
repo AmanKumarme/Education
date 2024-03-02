@@ -46,9 +46,12 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
   const handleChange = (e) => {
     name = e.target.name;
     value = e.target.value; 
+
     if(value !== ""){
       setRegistration({ ...registration, [name]: value });
     }
+    console.log(name , " " , value);
+   
   };
   return (
     <div className={`${WebDevlopmentStyles.formContainer}`}>
@@ -108,8 +111,9 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
             onChange={handleChange}
             name="gender"
             id=""
+            value={registration.gender}
           >
-            <option selected value="">Select Gender</option>
+            <option>Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
@@ -132,8 +136,9 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
             onChange={handleChange}
             name="courses"
             id=""
+            value={registration.courses}
           >
-            <option selected value="">Select courses</option>
+            <option>Select courses</option>
             <option value="HTML CSS & Javascript">HTML CSS & Javascript</option>
             <option value="Frontend Web Development">
               Frontend Web Development

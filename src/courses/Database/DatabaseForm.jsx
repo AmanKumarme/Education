@@ -109,6 +109,7 @@ const DatabaseForm = ({success, setSuccess}) => {
             onChange={handleChange}
             name="gender"
             id=""
+            value={registration.gender}
           >
             <option value="">Select Gender</option>
             <option value="male">Male</option>
@@ -133,6 +134,7 @@ const DatabaseForm = ({success, setSuccess}) => {
             onChange={handleChange}
             name="courses"
             id=""
+            value={registration.courses}
           >
             <option value="">Select courses</option>
             <option value="SQL form Database">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Sidebar from "../Sidebar/Sidebar";
 
@@ -30,9 +30,9 @@ const Header = () => {
       </div>
       <div className="col-2">
         <nav className="navigation">
-          <Link to="/">Home</Link>
-          <Link to="/aboutus">About</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/aboutus">About</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </nav>
         <div>
         <GiHamburgerMenu className="text-white fs-2 option_sidebar" style={{cursor:"pointer"}} onClick={handleShow}/>
