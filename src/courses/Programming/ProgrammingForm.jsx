@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProgrammingStyles from "./ProgrammingForm.module.css";
+const apikey  = import.meta.env.VITE_API_URL;
 
 const ProgrammingForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
@@ -12,11 +13,11 @@ const ProgrammingForm = ({success, setSuccess}) => {
     courses: "",
     courseType: "Programming",
   });
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://backend-reg-form-1.onrender.com/demo",
+      apikey,
       {
         method: "POST",
         body: JSON.stringify(registration),

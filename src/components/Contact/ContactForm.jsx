@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-
+const apiKey = import.meta.env.VITE_API_URL_CONTACT;
 const ContactForm = () => {
   const [contact, setContact] = useState({
     name: "",
@@ -17,10 +17,11 @@ const ContactForm = () => {
     }));
   };
 
+  console.log(apiKey);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://backend-reg-form-3.onrender.com/contact", {
+      const response = await axios.post(apiKey, {
         data: contact,
         headers: {
           "Content-Type": "application/json",

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ExcelStyles from "./ExcelForm.module.css";
+const apikey  = import.meta.env.VITE_API_URL;
 
 const ExcelForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
@@ -12,11 +13,11 @@ const ExcelForm = ({success, setSuccess}) => {
     courses: "",
     courseType: "Advance Excel",
   });
-
+console.log(apikey);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://backend-reg-form-1.onrender.com/demo",
+      apikey,
       {
         method: "POST",
         body: JSON.stringify(registration),
@@ -136,7 +137,7 @@ const ExcelForm = ({success, setSuccess}) => {
             value={registration.courses}
           >
             <option value="">Select courses</option>
-            <option value="Android App Development">Advance Excel</option>
+            <option value="Advance Excel">Advance Excel</option>
           </select>
         </div>
         <input

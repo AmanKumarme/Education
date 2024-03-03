@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import DatabaseStyles from "./Database.module.css";
+const apikey  = import.meta.env.VITE_API_URL;
 
 const DatabaseForm = ({success, setSuccess}) => {
-  console.log(success);
   const [registration, setRegistration] = useState({
     name: "",
     email: "",
@@ -13,11 +13,11 @@ const DatabaseForm = ({success, setSuccess}) => {
     courses: "",
     courseType: "Database",
   });
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://backend-reg-form-1.onrender.com/demo",
+      apikey,
       {
         method: "POST",
         body: JSON.stringify(registration),

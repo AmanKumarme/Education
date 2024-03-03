@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DigitalStyles from "./Digital.module.css";
+const apikey  = import.meta.env.VITE_API_URL;
 
 const DigitalMarketingForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
@@ -12,10 +13,11 @@ const DigitalMarketingForm = ({success, setSuccess}) => {
     courses: "",
     courseType: "Digital Marketing",
   });
+  console.log(apikey);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://backend-reg-form-1.onrender.com/demo",
+      apikey,
       {
         method: "POST",
         body: JSON.stringify(registration),

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WebDevlopmentStyles from "./WebDevelopment.module.css";
+const apikey  = import.meta.env.VITE_API_URL;
 
 const WebDevelopmentForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
@@ -13,10 +14,12 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
     courseType: "Web Development",
   });
 
+  console.log(apikey);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://backend-reg-form-1.onrender.com/demo",
+      apikey,
       {
         method: "POST",
         body: JSON.stringify(registration),

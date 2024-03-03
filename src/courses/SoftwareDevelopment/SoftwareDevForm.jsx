@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import SoftwareStyles from "./Software.module.css";
+const apikey  = import.meta.env.VITE_API_URL;
+
 const SoftwareDevForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
     name: "",
@@ -12,10 +14,11 @@ const SoftwareDevForm = ({success, setSuccess}) => {
     courseType: "Software Development",
   });
 
+  console.log(apikey);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://backend-reg-form-1.onrender.com/demo",
+      apikey,
       {
         method: "POST",
         body: JSON.stringify(registration),
