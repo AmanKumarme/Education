@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import SoftwareStyles from "./Software.module.css";
+import AppStyles from "./AppDev.module.css";
 const apikey  = import.meta.env.VITE_API_URL;
 
-const SoftwareDevForm = ({success, setSuccess}) => {
+const AppDevelopmentForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
     name: "",
     email: "",
@@ -11,10 +11,8 @@ const SoftwareDevForm = ({success, setSuccess}) => {
     gender: "",
     address: "",
     courses: "",
-    courseType: "Software Development",
+    courseType: "App development",
   });
-
-  console.log(apikey);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
@@ -28,11 +26,10 @@ const SoftwareDevForm = ({success, setSuccess}) => {
       }
     );
     const data = await response.json();
-    console.log(data);
+    
     if(registration.name !== "" && registration.email !== "" && registration.date !== "" && registration.age !== "" && registration.gender !== "" && registration.address !== "" && registration.courses !== ""){
       setSuccess(true);
     }
-
     setRegistration({
       name: "",
       email: "",
@@ -41,7 +38,7 @@ const SoftwareDevForm = ({success, setSuccess}) => {
       gender: "",
       address: "",
       courses: "",
-      courseType: "Software Development",
+      courseType: "App Creation",
     });
   };
   let name, value;
@@ -53,9 +50,9 @@ const SoftwareDevForm = ({success, setSuccess}) => {
     }
   };
   return (
-    <div className={`${SoftwareStyles.formContainer}`}>
+    <div className={`${AppStyles.formContainer}`}>
       <form
-        className={SoftwareStyles.form}
+        className={AppStyles.form}
         action="/register"
         onSubmit={handleSubmit}
       >
@@ -137,10 +134,17 @@ const SoftwareDevForm = ({success, setSuccess}) => {
             id=""
             value={registration.courses}
           >
-            <option value="">Select courses</option>
-            <option value="Software Development">Sofware Development</option>
+            <option value="">Select Services</option>
+            <option value="Android App Development">
+              Android App Development
+            </option>
           </select>
         </div>
+        <input
+          className="form-control py-2"
+          type="hidden"
+          value="App Development"
+        />
         <div>
           <input
             className="btn btn-success"
@@ -155,4 +159,4 @@ const SoftwareDevForm = ({success, setSuccess}) => {
   );
 };
 
-export default SoftwareDevForm;
+export default AppDevelopmentForm;

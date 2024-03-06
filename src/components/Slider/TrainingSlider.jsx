@@ -49,26 +49,26 @@ export default function TrainingSlider() {
     <Slider {...settings} className="mt-5">
      <div className="serviceContainer programming bg-light d-flex flex-column align-items-center justify-content-center text-center">
         <h3>PROGRAMMING</h3>
-        <Link to='/programming-course'>
+        <Link to='/training/programming-course'>
         <button className="btn text-white">Learn more</button>
         </Link>
       </div>
       <div className="serviceContainer web_development bg-light d-flex flex-column align-items-center justify-content-center text-center" >
         <h3>WEB DEVELOPMENT</h3>
-        <Link to="/web-development-course">
+        <Link to="/training/web-development-course">
         <button className="btn text-white">Learn more</button>
         </Link>
         
       </div>
       <div className="serviceContainer database bg-light d-flex flex-column align-items-center justify-content-center text-center" >
         <h3>DATABASE</h3>
-        <Link to='/database-course'>
+        <Link to='/training/database-course'>
         <button className="btn text-white" >Learn more</button>
         </Link>
       </div>
       <div className="serviceContainer excel bg-light d-flex flex-column align-items-center justify-content-center text-center" >
         <h3>ADVANCE EXCEL</h3>
-        <Link to='/excel-course'>
+        <Link to='/training/excel-course'>
         <button className="btn text-white" >Learn more</button>
         </Link>
       </div>

@@ -13,7 +13,7 @@ const DigitalMarketingForm = ({success, setSuccess}) => {
     courses: "",
     courseType: "Digital Marketing",
   });
-  console.log(apikey);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
@@ -27,7 +27,7 @@ const DigitalMarketingForm = ({success, setSuccess}) => {
       }
     );
     const data = await response.json();
-    console.log(data);
+   
     if(registration.name !== "" && registration.email !== "" && registration.date !== "" && registration.age !== "" && registration.gender !== "" && registration.address !== "" && registration.courses !== ""){
       setSuccess(true);
     }

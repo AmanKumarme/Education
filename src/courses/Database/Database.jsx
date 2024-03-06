@@ -69,7 +69,7 @@ const Database = () => {
       </div>
       {
        
-        success && ( <Alert name={"database"} /> ) 
+        success && ( <Alert name={"database course"} /> ) 
       }
  
     </>

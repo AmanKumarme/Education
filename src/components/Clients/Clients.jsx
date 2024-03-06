@@ -1,13 +1,13 @@
 import React from 'react';
-import DevelopmentSlider from '../Slider/ClientSlider';
+import ClientSlider from '../Slider/ClientSlider';
 
-const Development = () => {
+const Client = () => {
   return (
     <div className="mt-5 text-white px-sm-5">
       <h2 className="text-center">Clients</h2>
-      <DevelopmentSlider  />
+      <ClientSlider  />
     </div>
   )
 }
 
-export default Development
+export default Client

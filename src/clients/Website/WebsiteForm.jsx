@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import AppStyles from "./AppDev.module.css";
+import WebsiteStyles from "./Website.module.css";
 const apikey  = import.meta.env.VITE_API_URL;
 
-const AppDevelopmentForm = ({success, setSuccess}) => {
+const WebsiteForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
     name: "",
     email: "",
@@ -11,9 +11,11 @@ const AppDevelopmentForm = ({success, setSuccess}) => {
     gender: "",
     address: "",
     courses: "",
-    courseType: "App development",
+    courseType: "Web Development",
   });
-console.log(apikey);
+
+ 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
@@ -27,7 +29,8 @@ console.log(apikey);
       }
     );
     const data = await response.json();
-    console.log(data);
+   
+
     if(registration.name !== "" && registration.email !== "" && registration.date !== "" && registration.age !== "" && registration.gender !== "" && registration.address !== "" && registration.courses !== ""){
       setSuccess(true);
     }
@@ -39,21 +42,24 @@ console.log(apikey);
       gender: "",
       address: "",
       courses: "",
-      courseType: "App development",
+      courseType: "Website Creation",
     });
   };
   let name, value;
   const handleChange = (e) => {
     name = e.target.name;
-    value = e.target.value;
+    value = e.target.value; 
+
     if(value !== ""){
       setRegistration({ ...registration, [name]: value });
     }
+    console.log(name , " " , value);
+   
   };
   return (
-    <div className={`${AppStyles.formContainer}`}>
+    <div className={`${WebsiteStyles.formContainer}`}>
       <form
-        className={AppStyles.form}
+        className={WebsiteStyles.form}
         action="/register"
         onSubmit={handleSubmit}
       >
@@ -110,7 +116,7 @@ console.log(apikey);
             id=""
             value={registration.gender}
           >
-            <option value="">Select Gender</option>
+            <option>Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
@@ -135,16 +141,23 @@ console.log(apikey);
             id=""
             value={registration.courses}
           >
-            <option value="">Select courses</option>
-            <option value="Android App Development">
-              Android App Development
+            <option>Select Service</option>
+            <option value="HTML CSS & Javascript">HTML CSS & Javascript</option>
+            <option value="Frontend Web Development">
+              Frontend Web Development
+            </option>
+            <option value="Backend Web Development">
+              Backend Web Development
+            </option>
+            <option value="Full Stack Web Development">
+              Full Stack Web Development
             </option>
           </select>
         </div>
         <input
           className="form-control py-2"
           type="hidden"
-          value="App Development"
+          value="Website Creation"
         />
         <div>
           <input
@@ -160,4 +173,4 @@ console.log(apikey);
   );
 };
 
-export default AppDevelopmentForm;
+export default WebsiteForm;

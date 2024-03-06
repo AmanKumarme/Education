@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import WebDevelopmentForm from "./WebDevelopmentForm";
+import WebsiteForm from "./WebsiteForm";
 import Alert from "../../alert";
 
-const WebDevelopment = () => {
+const Website = () => {
   const [success, setSuccess] = useState(false);
   setTimeout(() => {
     setSuccess(false);
@@ -10,7 +10,7 @@ const WebDevelopment = () => {
   return (
     <>
       <div className="container text-white text-left mt-5">
-        <h2 className="text-center heading">Web Development</h2>
+        <h2 className="text-center heading">Website Creation</h2>
         <div className="container mt-5 text-center">
           <p className="about-para">
             "Discover the power of crafting immersive digital experiences
@@ -35,7 +35,7 @@ const WebDevelopment = () => {
             className="btn btn-success"
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#WebDevelopmentModal"
+            data-bs-target="#WebsiteModal"
           >
             Register
           </button>
@@ -44,7 +44,7 @@ const WebDevelopment = () => {
 
       <div
         className="modal fade"
-        id="WebDevelopmentModal"
+        id="WebsiteModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -53,7 +53,7 @@ const WebDevelopment = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="exampleModalLabel">
-                Registration Form for Web Development
+                Registration Form for creating a Website
               </h1>
               <button
                 type="button"
@@ -63,14 +63,14 @@ const WebDevelopment = () => {
               ></button>
             </div>
             <div className="modal-body" style={{ height: "500px" }}>
-              <WebDevelopmentForm success={success} setSuccess={setSuccess} />
+              <WebsiteForm success={success} setSuccess={setSuccess} />
             </div>
           </div>
         </div>
       </div>
-      {success && <Alert name={"Web Development course"} />}
+      {success && <Alert name={"WebSite Creation"} />}
     </>
   );
 };
 
-export default WebDevelopment;
+export default Website;

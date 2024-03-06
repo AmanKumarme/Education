@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import WebDevlopmentStyles from "./WebDevelopment.module.css";
+import SoftwareStyles from "./Software.module.css";
 const apikey  = import.meta.env.VITE_API_URL;
 
-const WebDevelopmentForm = ({success, setSuccess}) => {
+const SoftwareDevForm = ({success, setSuccess}) => {
   const [registration, setRegistration] = useState({
     name: "",
     email: "",
@@ -11,11 +11,10 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
     gender: "",
     address: "",
     courses: "",
-    courseType: "Web Development",
+    courseType: "Software Development",
   });
 
-  
-
+  console.log(apikey);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
@@ -29,10 +28,11 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
       }
     );
     const data = await response.json();
-
+    console.log(data);
     if(registration.name !== "" && registration.email !== "" && registration.date !== "" && registration.age !== "" && registration.gender !== "" && registration.address !== "" && registration.courses !== ""){
       setSuccess(true);
     }
+
     setRegistration({
       name: "",
       email: "",
@@ -41,24 +41,21 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
       gender: "",
       address: "",
       courses: "",
-      courseType: "Web Development",
+      courseType: "Software Development",
     });
   };
   let name, value;
   const handleChange = (e) => {
     name = e.target.name;
-    value = e.target.value; 
-
+    value = e.target.value;
     if(value !== ""){
       setRegistration({ ...registration, [name]: value });
     }
-    console.log(name , " " , value);
-   
   };
   return (
-    <div className={`${WebDevlopmentStyles.formContainer}`}>
+    <div className={`${SoftwareStyles.formContainer}`}>
       <form
-        className={WebDevlopmentStyles.form}
+        className={SoftwareStyles.form}
         action="/register"
         onSubmit={handleSubmit}
       >
@@ -115,7 +112,7 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
             id=""
             value={registration.gender}
           >
-            <option>Select Gender</option>
+            <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
@@ -140,24 +137,10 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
             id=""
             value={registration.courses}
           >
-            <option>Select courses</option>
-            <option value="HTML CSS & Javascript">HTML CSS & Javascript</option>
-            <option value="Frontend Web Development">
-              Frontend Web Development
-            </option>
-            <option value="Backend Web Development">
-              Backend Web Development
-            </option>
-            <option value="Full Stack Web Development">
-              Full Stack Web Development
-            </option>
+            <option value="">Select Services</option>
+            <option value="Software Development">Sofware Development</option>
           </select>
         </div>
-        <input
-          className="form-control py-2"
-          type="hidden"
-          value="Web Development"
-        />
         <div>
           <input
             className="btn btn-success"
@@ -172,4 +155,4 @@ const WebDevelopmentForm = ({success, setSuccess}) => {
   );
 };
 
-export default WebDevelopmentForm;
+export default SoftwareDevForm;

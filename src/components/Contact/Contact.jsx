@@ -50,7 +50,7 @@ const Contact = () => {
             </a>
             <h3 className="mt-5">Address</h3>
             <a
-              href="https://maps.app.goo.gl/JNvKEBAQ3GzxYzba7"
+              href="https://maps.app.goo.gl/RGeubd5FcDGqYsaV7"
               target="_blank"
               className="text-white text-decoration-none sub-heading loaction"
             >
@@ -60,19 +60,19 @@ const Contact = () => {
           </div>
           <div className="col-12 col-md-6">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.549947475234!2d78.53082707484572!3d25.453305721280703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397771cb59f045bd%3A0x1e821ba4033292cb!2sRathore%20Samosa%20Corner!5e0!3m2!1sen!2sin!4v1709303048397!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3602.550714930499!2d78.5305054753902!3d25.453280077547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDI3JzExLjgiTiA3OMKwMzEnNTkuMSJF!5e0!3m2!1sen!2sin!4v1709733224203!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: "0" }}
               allowFullScreen=""
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
       </div>
 
-     <ContactForm/>
+      <ContactForm />
     </>
   );
 };

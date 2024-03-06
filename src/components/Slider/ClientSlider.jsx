@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "./ServiceSlider.css";
 import { Link } from "react-router-dom";
 
-export default function DevelopmentSlider() {
+export default function ClientSlider() {
   const [flip, setFlip] = useState(false);
  const handleCard = () => {
   setFlip(true);
@@ -51,27 +51,27 @@ export default function DevelopmentSlider() {
   return (
     <Slider {...settings} className="mt-5">
      <div className="serviceContainer app_development bg-light d-flex flex-column align-items-center justify-content-center text-center">
-        <h3>APP DEVELOPMENT</h3>
-        <Link to="/app-development-course">
+        <h3>APP CREATION</h3>
+        <Link to="/client/app-creation">
         <button className="btn text-white" onClick={handleCard}>Learn more</button>
         </Link>
         
       </div>
       <div className="serviceContainer web_development bg-light d-flex flex-column align-items-center justify-content-center text-center" >
-        <h3>WEB DEVELOPMENT</h3>
-        <Link to="/web-development-course">
+        <h3>WEBSITE CREATION</h3>
+        <Link to="/client/website-creation">
         <button className="btn text-white">Learn more</button>
         </Link>
       </div>
       <div className="serviceContainer software_development bg-light d-flex flex-column align-items-center justify-content-center text-center" >
-        <h3>SOFTWARE DEVELOPMENT</h3>
-        <Link to='/software-development-course'>
+        <h3>SOFTWARE CREATION</h3>
+        <Link to='/client/software-creation'>
         <button className="btn text-white">Learn more</button>
         </Link>
       </div>
       <div className="serviceContainer digital_marketing bg-light d-flex flex-column align-items-center justify-content-center text-center">
         <h3>DIGITAL MARKETING</h3>
-        <Link to='/digital-marketing-course'>
+        <Link to='/client/digital-marketing'>
         <button className="btn text-white">Learn more</button>
         </Link>
       </div>

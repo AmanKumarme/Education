@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SoftwareDevForm from "./SoftwareDevForm";
 import Alert from "../../alert";
 
-const SoftwareDevelopment = () => {
+const Software = () => {
   const [success, setSuccess] = useState(false);
   setTimeout(() =>{
     setSuccess(false);
@@ -10,7 +10,7 @@ const SoftwareDevelopment = () => {
   return (
     <>
       <div className="container text-white mt-5">
-        <h2 className="heading text-center">Software Development</h2>
+        <h2 className="heading text-center">Software Creation</h2>
         <div className="container mt-5 text-center">
           <p className="about-para">
             "Welcome to the realm of endless innovation and technological
@@ -33,7 +33,7 @@ const SoftwareDevelopment = () => {
             className="btn btn-success"
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#SoftwareDevelopment"
+            data-bs-target="#Software"
           >
             Register
           </button>
@@ -41,16 +41,16 @@ const SoftwareDevelopment = () => {
       </div>
       <div
         className="modal fade"
-        id="SoftwareDevelopment"
+        id="Software"
         tabIndex="-1"
-        aria-labelledby="SoftwareDevelopmentLabel"
+        aria-labelledby="SoftwareLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="SoftwareDevelopmentLabel">
-                Registration Form for Software Development
+              <h1 className="modal-title fs-5" id="SoftwareLabel">
+                Registration Form for creating a Software
               </h1>
               <button
                 type="button"
@@ -65,9 +65,9 @@ const SoftwareDevelopment = () => {
           </div>
         </div>
       </div>
-      {success && <Alert name={"Software Development"} />}
+      {success && <Alert name={"Software Creation"} />}
     </>
   );
 };
 
-export default SoftwareDevelopment;
+export default Software;

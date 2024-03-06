@@ -8,16 +8,17 @@ import "slick-carousel/slick/slick-theme.css";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import AboutUs from './components/AboutUs/AboutUs.jsx';
 import Training from './components/Training/Training.jsx';
-import Development from './components/Clients/Clients.jsx';
 import MainContainer from './components/MainComp/MainContainer.jsx';
 import WebDevelopment from './courses/WebDevelopment/WebDevelopment.jsx';
 import Database from './courses/Database/Database.jsx';
 import Programming from './courses/Programming/Programming.jsx';
-import DigitalMarketing from './courses/DigitalMarketing/DigitalMarketing.jsx';
-import AppDevelopment from './courses/AppDevelopment/AppDevelopment.jsx';
-import SoftwareDevelopment from './courses/SoftwareDevelopment/SoftwareDevelopment.jsx';
 import Excel from './courses/Excel/Excel.jsx';
 import Contact from './components/Contact/Contact.jsx';
+import DigitalMarketing from './clients/DigitalMarketing/DigitalMarketing.jsx';
+import AppCreation from './clients/AppCreation/AppCreation.jsx'
+import Website from './clients/Website/Website.jsx';
+import Software from './clients/Software/Software.jsx';
+import Client from './components/Clients/Clients.jsx';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -39,39 +40,44 @@ const router = createBrowserRouter([{
       path: '/training',
       element: <Training/>
     },
-   
     {
-      path: '/development',
-      element: <Development/>
+      path: '/training/excel-course',
+      element:<Excel/>
     },
     {
-      path: '/web-development-course',
+      path: '/training/web-development-course',
       element:<WebDevelopment/>
     },
     {
-      path: '/database-course',
+      path: '/training/database-course',
       element:<Database/>
     },
     {
-      path: '/programming-course',
+      path: '/training/programming-course',
       element:<Programming/>
     },
     {
-      path: '/digital-marketing-course',
+      path: '/client',
+      element: <Client/>
+    },
+    {
+      path: '/client/website-creation',
+      element: <Website/>
+    },
+   
+    {
+      path: '/client/digital-marketing',
       element:<DigitalMarketing/>
     },
     {
-      path: '/app-development-course',
-      element:<AppDevelopment/>
+      path: '/client/app-creation',
+      element:<AppCreation/>
     },
     {
-      path: '/software-development-course',
-      element:<SoftwareDevelopment/>
+      path: '/client/software-creation',
+      element:<Software/>
     },
-    {
-      path: '/excel-course',
-      element:<Excel/>
-    }
+   
   ]
 }])
 

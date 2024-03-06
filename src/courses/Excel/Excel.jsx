@@ -68,7 +68,7 @@ const Excel = () => {
           </div>
         </div>
       </div>
-      {success && <Alert name={"Advance Excel"} />}
+      {success && <Alert name={"Advance Excel course"} />}
     </>
   );
 };

@@ -27,7 +27,6 @@ const DatabaseForm = ({success, setSuccess}) => {
       }
     );
     const data = await response.json();
-    console.log(data);
     if(registration.name !== "" && registration.email !== "" && registration.date !== "" && registration.age !== "" && registration.gender !== "" && registration.address !== "" && registration.courses !== ""){
       setSuccess(true);
     }

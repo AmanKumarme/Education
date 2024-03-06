@@ -65,7 +65,7 @@ const Programming = () => {
           </div>
         </div>
       </div>
-      {success && <Alert name={"Programming"} />}
+      {success && <Alert name={"Programming course"} />}
     </>
   );
 };

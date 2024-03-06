@@ -10,7 +10,7 @@ const MainContainer = () => {
               For Trainees
             </button>
           </Link>
-          <Link to="/development">
+          <Link to="/client">
         <button className='btn-font text-white fw-bold button'>
             For Clients
         </button>

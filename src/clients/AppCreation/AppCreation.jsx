@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AppDevelopmentForm from "./AppDevelopmentForm";
 import Alert from "../../alert";
 
-const AppDevelopment = () => {
+const AppCreation = () => {
   const [success, setSuccess] = useState(false);
   setTimeout(() =>{
     setSuccess(false);
@@ -10,7 +10,7 @@ const AppDevelopment = () => {
   return (
     <>
       <div className="container text-white mt-5">
-        <h2 className="heading text-center">App Development</h2>
+        <h2 className="heading text-center">App Creation</h2>
         <div className="container mt-5 text-center">
           <p className="about-para">
             "Welcome to Application Development! At Param Computers, we are
@@ -48,7 +48,7 @@ const AppDevelopment = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="AppDevelopmentLabel">
-                Registration Form for App Development
+                Registration Form for Creation of App
               </h1>
               <button
                 type="button"
@@ -63,9 +63,9 @@ const AppDevelopment = () => {
           </div>
         </div>
       </div>
-      {success && <Alert name={"App Development"} />}
+      {success && <Alert name={"App Creation"} />}
     </>
   );
 };
 
-export default AppDevelopment;
+export default AppCreation;
